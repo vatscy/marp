@@ -186,7 +186,8 @@ module.exports = class MdsMainMenu
             }
             {
               label: '&Start Presentation'
-              accelerator: 'Space'
+              enabled: @window?
+              accelerator: 'CmdOrCtrl+P'
               click: =>
                 @window.mdsWindow.send 'startPresentation'
             }
